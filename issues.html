@@ -1,25 +1,5 @@
 <script>
 
-	function myFunction() {
-		// document.getElementById("body").innerHTML = "<h1>Slide Issues</h1> <p> 75% </p> <ul> <li> 1: Text font issues <li> 2: Element alignment issues <li> 1: Object out of slide frame issues </ul> <h3>Suggestions: 1 Text issues</h3> <ol> <li>The body text box below the title text box with three bullet points contains two separate fonts: the first two bullets are in 13pt, and the third bullet is in 14pt. Make all body text one size. </ol> <h3>Suggestions: 2 Element alignment and spacing issue</h3> <ol> <li>Body text boxes are not vertically aligned with no clear alignment strategy. <li> All text boxes are not distributed evenly. </ol> <h3>Suggestions: 1 Object out of slide frame issue</h3> <ol> <li>The image is located primarily in the bottom right quadrant, and its right and bottom edges are out of the slide&rsquo;s frame. The elemen is out of frame and may be cut off during presentation mode. Move the image in its entirety on the page. </ol>"
-	}
-</script>
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/646c0763ad80445890ee7b74/1h12vpnd1';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    End of Tawk.to Script -->
-
-<script>
-
     function changeFonts() {
 
         document.getElementById("body_text_errors").innerHTML = "Great job! No issues here.";
@@ -30,6 +10,18 @@
             document.getElementById("issues_by_type_list").innerHTML='';
         }
         document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
+
+        const audio = new Audio("ding-36029.mp3");
+        audio.play();
+
+
+        setTimeout(function(){ 
+
+            const audio2 = new Audio("text.m4a");
+        audio2.play() 
+
+        }, 1000) 
+        ;
 
     }
 
@@ -43,11 +35,24 @@
             document.getElementById("issues_by_type_list").innerHTML='';
         }
         document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
+        const audio = new Audio("ding-36029.mp3");
+        audio.play();
+
+        setTimeout(function(){ 
+
+        const audio2 = new Audio("image.m4a");
+        audio2.play() 
+
+        }, 1000) 
+        ;
+
     }
 </script>
 <body id = "body">
     <!-- <iframe src ="https://docs.google.com/presentation/d/1K7qA0sQSJS18rv56ITzqLzyig3EwKSxAMnlmCJtboQQ/edit?pli=1#slide=id.g244516e4cc0_0_98" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"</iframe>></iframe> -->
+<a href = "https://docs.google.com/presentation/d/1tpJ1Ckb0hC0FZsAsuIlKZQ0HEwYzCgAWWJuSsk2RLHc/edit?usp=sharing">Link to Slide Deck</a>
 <h1>Directory</h1>
+If you have any questions, or want to make changes outside of what is selected below, please use our chatbot located at the bottom of the page. 
 <ul>
     <li><a href="#rough_overview">Rough Overview</a>
         <ul>
