@@ -4,6 +4,8 @@
 
         document.getElementById("body_text_errors").innerHTML = "Great job! No issues here.";
         document.getElementById("text_issue_to_del").innerHTML = '';
+        document.getElementById("fontchange").innerHTML = 'The uppermost title text box is in font Arial in 25pt. The body text box below the title with three bullet points is in font Arial in 14pt.';
+
         if (document.getElementById("issues_type").childElementCount > 1) {
             document.getElementById("issues_type").innerHTML = '<li>One object out of slide frame issue</li>';
         } else {
@@ -30,6 +32,8 @@
 
         document.getElementById("oof_image_errors").innerHTML = "Great job! No issues here.";
         document.getElementById("oof_to_del").innerHTML = '';
+        document.getElementById("moveimage").innerHTML = 'The image is spread between the top and bottom right quadrants.';
+
         if (document.getElementById("issues_type").childElementCount > 1) {
             document.getElementById("issues_type").innerHTML = '<li>One text font issue</li>';
         } else {
@@ -91,7 +95,7 @@ If you have any questions, or want to make changes outside of what is selected b
 <p>    The slide is about the history of Stanford University. There are one title, one body text box, and one image.
 </p>
 <h2 id="positioning">Positioning</h2>
-<p>The title text box is the uppermost element and stretches from the top of the top left quadrant to the top right quadrant. Directly underneath the title text box is a body text box with three bullet points spread between the top and bottom left quadrants. The image is spread between the top and bottom right quadrants, and its top and bottom right edges are out of the slide’s frame.
+<p>The title text box is the uppermost element and stretches from the top of the top left quadrant to the top right quadrant. Directly underneath the title text box is a body text box with three bullet points spread between the top and bottom left quadrants. <span id ="moveimage">The image is spread between the top and bottom right quadrants, and its top and bottom right edges are out of the slide’s frame.</span>
 </p>
 <h2 id="content">Content</h2>
 <h3 id="text">Text</h3>    
@@ -107,7 +111,7 @@ If you have any questions, or want to make changes outside of what is selected b
 The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Leland Stanford Jr. taken in 1878. The alt text reads: The black and white photograph shows three individuals looking to their left, assumed at a painter. The man on the left, Leland Stanford, is standing, has a white beard, and wears a formal suit with a bowtie. The woman, Jane Stanford, is sitting and wears her hair up in an elaborate bun. Their son stands next to Jane on her right side with clean cut hair and a formal suit.
 
 <h2 id="text_font">Font</h2>    
-    The uppermost title text box is in font Arial in 25pt. The body text box below the title with three bullet points contains two separate fonts: the first and third bullets are in font Arial in 14pt, and the second is in font Barlow in 14pt. 
+<span id="fontchange">The uppermost title text box is in font Arial in 25pt. The body text box below the title with three bullet points contains two separate fonts: the first and third bullets are in font Arial in 14pt, and the second is in font Barlow in 14pt. </span>
     
 <h1 id="issues_by_type">Issues by Type</h1>
 <span id ="issues_by_type_list">
