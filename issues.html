@@ -18,6 +18,33 @@
     </script>
     End of Tawk.to Script -->
 
+<script>
+
+    function changeFonts() {
+
+        document.getElementById("body_text_errors").innerHTML = "Great job! No issues here.";
+        document.getElementById("text_issue_to_del").innerHTML = '';
+        if (document.getElementById("issues_type").childElementCount > 1) {
+            document.getElementById("issues_type").innerHTML = '<li>One object out of slide frame issue</li>';
+        } else {
+            document.getElementById("issues_by_type_list").innerHTML='';
+        }
+        document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
+
+    }
+
+    function moveImage() {
+
+        document.getElementById("oof_image_errors").innerHTML = "Great job! No issues here.";
+        document.getElementById("oof_to_del").innerHTML = '';
+        if (document.getElementById("issues_type").childElementCount > 1) {
+            document.getElementById("issues_type").innerHTML = '<li>One text font issue</li>';
+        } else {
+            document.getElementById("issues_by_type_list").innerHTML='';
+        }
+        document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
+    }
+</script>
 <body id = "body">
     <!-- <iframe src ="https://docs.google.com/presentation/d/1K7qA0sQSJS18rv56ITzqLzyig3EwKSxAMnlmCJtboQQ/edit?pli=1#slide=id.g244516e4cc0_0_98" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"</iframe>></iframe> -->
 <h1>Directory</h1>
@@ -35,9 +62,22 @@
             <li><a href="#text_font">Font</a></li>
         </ul>
     </li>
+    <li><a href="#issues_by_type">Issues By Element</a>
+        <ul>
+            <li><a href="#one_text_issues">One Text Issue</a></li>
+            <li><a href="#one_oof">One Out of Frame Element</a></li>
+        </ul>
+    </li>
+    <li><a href="#issues_by_element">Issues By Element</a>
+        <ul>
+            <li><a href="#one_title_text_box">One Title Text Box</a></li>
+            <li><a href="#body_text_box">One Body Text Box</a></li>
+            <li><a href="#one_image">One Image</a></li>
+        </ul>
+    </li>
 </ul>
 
-<p>Slide Score: 70%</p>
+<p id ="score">Slide Score: <span id = "percentage">70</span>%</p>
 <h1 id = "rough_overview">Rough Overview</h1>
 <h2 id = "slide_overview">Slide Overview </h2>
 <p>    The slide is about the history of Stanford University. There are one title, one body text box, and one image.
@@ -61,55 +101,64 @@ The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Le
 <h2 id="text_font">Font</h2>    
     The uppermost title text box is in font Arial in 25pt. The body text box below the title with three bullet points contains two separate fonts: the first and third bullets are in font Arial in 14pt, and the second is in font Barlow in 14pt. 
     
-<h1>Issues by Type</h1>
-<ul>
+<h1 id="issues_by_type">Issues by Type</h1>
+<span id ="issues_by_type_list">
+<ul id = "issues_type">
     <li>One text font issue</li>
     <li>One object out of slide frame issue</li>
 </ul>
+</span>
 
-<h2>One text issue</h2>
-<ol>
+<span id ="text_issue_to_del">
+<h2 id="one_text_issues">One text issue</h2>
+<ol id = "text_issues_desc">
 <li>The body text box below the title contains two separate fonts across three bullets. The first and third bullets are in font Arial and the second in font Barlow. We will change all text in the text box to the most dominant font, Arial. 
 <br>
-<button>Change all texts' font to Arial</button>
+<button onClick="changeFonts()">Change all texts' font to Arial</button>
 </li>
 </ol>
+</span>
 
-<h2>One object out of slide frame issue</h2>
-<ol>
+<span id="oof_to_del">
+<h2 id="one_oof">One object out of slide frame issue</h2>
+<ol id="one_oof_desc">
 <li>The image’s top and bottom right edges are out of the slide’s frame. We will bring it in frame with respect to margins. </li>
 <br>
-<button>Align image within frame</button>
+<button onClick="moveImage()">Align image within frame</button>
 </li>
 </ol>
+</span>
 
-<h1>Issues by Element</h1>
-<ul>
+<h1 id="issues_by_element">Issues by Element</h1>
+<ul id="element_issues">
     <li>One title text box </li>
     <li>One body text box</li>
     <li>One image</li>
 </ul>
 
-<h2>One title text box</h2>
+<h2 id="One_title_text_box">One title text box</h2>
 <p>Great job! No issues here. </p>
 
-<h2>One body text box</h2>
-
+<h2 id="body_text_box">One body text box</h2>
+<span id = "body_text_errors">
 <ol>
     <li>The body text box below the title contains two separate fonts across three bullets. The first and third bullets are in font Arial, and the second in font Barlow. We will change all text in the text box to the most dominant font, Arial. 
     </li>
 <br>
-<button>Change all texts' font to Arial</button>
+<button onClick="changeFonts()">Change all texts' font to Arial</button>
 </li>
 </ol>
+</span>
 
-<h2>One Image</h2>
-<ol>
+<h2 id="one_image">One Image</h2>
+<span id="oof_image_errors">
+<ol li>
 <li>The image’s top and bottom right edges are out of the slide’s frame. We will bring it in frame with respect to margins. </li>
 <br>
-<button>Align image within frame</button>
+<button onClick="moveImage()">Align image within frame</button>
 </li>
 </ol>
+</span>
 <!-- begin olark code -->
 <script type="text/javascript">
     ;(function(o,l,a,r,k,y){if(o.olark)return;
