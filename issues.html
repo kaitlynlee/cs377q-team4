@@ -8,6 +8,8 @@
             document.getElementById("issues_type").innerHTML = '<li>One object out of slide frame issue</li>';
         } else {
             document.getElementById("issues_by_type_list").innerHTML='Great job! No issues here. ';
+            document.getElementById("elements_to_del").innerHTML='Great job! No issues here. ';
+
         }
         document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
 
@@ -33,6 +35,8 @@
             document.getElementById("issues_type").innerHTML = '<li>One text font issue</li>';
         } else {
             document.getElementById("issues_by_type_list").innerHTML='Great job! No issues here.';
+            document.getElementById("elements_to_del").innerHTML='Great job! No issues here. ';
+
         }
         document.getElementById('percentage').innerHTML = parseInt(document.getElementById('percentage').innerHTML) + 15;
         const audio = new Audio("ding-36029.mp3");
@@ -135,6 +139,7 @@ The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Le
 </span>
 
 <h1 id="issues_by_element">Issues by Element</h1>
+<span id = "elements_to_del">
 <ul id="element_issues">
     <li>One title text box </li>
     <li>One body text box</li>
@@ -164,6 +169,8 @@ The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Le
 </li>
 </ol>
 </span>
+</span>
+
 <!-- begin olark code -->
 <script type="text/javascript">
     ;(function(o,l,a,r,k,y){if(o.olark)return;
