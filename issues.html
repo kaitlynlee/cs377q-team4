@@ -26,6 +26,12 @@
         }, 1000) 
         ;
 
+        if (document.getElementById("fixed_text").innerHTML.contains("yet")) {
+            document.getElementById("fixed_text").innerHTML = "<ul id='list'><li>Changed all body font to Arial</li><ul>"
+        } else {
+            document.getElementById("list").innerHTML += "<li>Changed all body font to Arial</li>"
+        }
+
     }
 
     function moveImage() {
@@ -53,6 +59,12 @@
         }, 1000) 
         ;
 
+        if (document.getElementById("fixed_text").innerHTML.contains("yet")) {
+            document.getElementById("fixed_text").innerHTML = "<ul id='list'><li>Aligned image to be in frame</li><ul>"
+        } else {
+            document.getElementById("list").innerHTML += "<li>Aligned image to be in frame</li>"
+        }
+
     }
 </script>
 <body id = "body">
@@ -65,7 +77,6 @@ If you have any questions, or want to make changes outside of what is selected b
         <ul>
             <li><a href="#slide_overview">Slide Overview</a></li>
             <li><a href="#positioning">Positioning</a></li>
-            <li><a href="#content">Content</a>
                 <ul>
                     <li><a href="#text">Text</a></li>
                     <li><a href="#image">Image</a></li>
@@ -87,6 +98,7 @@ If you have any questions, or want to make changes outside of what is selected b
             <li><a href="#one_image">One Image</a></li>
         </ul>
     </li>
+    <li><a href="#fixed">Fixed Issues</a></li>
 </ul>
 
 <p id ="score">Slide Score: <span id = "percentage">70</span>%</p>
@@ -97,19 +109,6 @@ If you have any questions, or want to make changes outside of what is selected b
 <h2 id="positioning">Positioning</h2>
 <p>The title text box is the uppermost element and stretches from the top of the top left quadrant to the top right quadrant. Directly underneath the title text box is a body text box with three bullet points spread between the top and bottom left quadrants. <span id ="moveimage">The image is spread between the top and bottom right quadrants, and its top and bottom right edges are out of the slide’s frame.</span>
 </p>
-<h2 id="content">Content</h2>
-<h3 id="text">Text</h3>    
-<p>The body text box with 3 bullet points explains facts about Stanford. They are: 
-<ul>
-<li>Stanford was founded in 1885 by Leland and Jane Stanford, dedicated to their son who had died of typhoid fever</li>
-<li>    They wanted to promote the public welfare by exercising an influence in behalf of humanity and civilization.
-</li>
-<li>    The university is currently comprised of seven schools and 18 interdisciplinary institutes with more than 16,000 students, 2,100 faculty and 1,800 postdoctoral scholars
-</li>
-</ul>  
-<h3 id="image">Image</h3>  
-The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Leland Stanford Jr. taken in 1878. The alt text reads: The black and white photograph shows three individuals looking to their left, assumed at a painter. The man on the left, Leland Stanford, is standing, has a white beard, and wears a formal suit with a bowtie. The woman, Jane Stanford, is sitting and wears her hair up in an elaborate bun. Their son stands next to Jane on her right side with clean cut hair and a formal suit.
-
 <h2 id="text_font">Font</h2>    
 <span id="fontchange">The uppermost title text box is in font Arial in 25pt. The body text box below the title with three bullet points contains two separate fonts: the first and third bullets are in font Arial in 14pt, and the second is in font Barlow in 14pt. </span>
     
@@ -173,6 +172,10 @@ The image shows a portrait of Senator Leland Stanford, Jane Lathrop Stanford, Le
 </ol>
 </span>
 </span>
+
+
+<h2 id ="fixed">Fixed Issues</h2>
+<span id="fixed_text">No issues yet</span>
 
 <!-- begin olark code -->
 <script type="text/javascript">
