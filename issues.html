@@ -26,7 +26,7 @@
         }, 1000) 
         ;
 
-        if (document.getElementById("fixed_text").innerHTML.contains("yet")) {
+        if (document.getElementById("fixed_text").innerHTML.includes("yet")) {
             document.getElementById("fixed_text").innerHTML = "<ul id='list'><li>Changed all body font to Arial</li><ul>"
         } else {
             document.getElementById("list").innerHTML += "<li>Changed all body font to Arial</li>"
@@ -59,7 +59,7 @@
         }, 1000) 
         ;
 
-        if (document.getElementById("fixed_text").innerHTML.contains("yet")) {
+        if (document.getElementById("fixed_text").innerHTML.includes("yet")) {
             document.getElementById("fixed_text").innerHTML = "<ul id='list'><li>Aligned image to be in frame</li><ul>"
         } else {
             document.getElementById("list").innerHTML += "<li>Aligned image to be in frame</li>"
