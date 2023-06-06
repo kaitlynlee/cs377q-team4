@@ -102,6 +102,7 @@ If you have any questions, or want to make changes outside of what is selected b
         </ul>
     </li>
     <li><a href="#fixed">Fixed Issues</a></li>
+    <li><a href="#chatbot">Chatbot</a></li>
 </ul>
 
 <p id ="score">Slide Score: <span id = "percentage">70</span>%</p>
@@ -184,9 +185,13 @@ If you have any questions, or want to make changes outside of what is selected b
 <span id="fixed_text">No issues yet</span>
 
 <!-- begin olark code -->
+<span id = "chatbot">
 <script type="text/javascript">
     ;(function(o,l,a,r,k,y){if(o.olark)return;
-    r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
+    r="script";
+    y=l.createElement(r);
+    // y.setAttribute("id", "chatbot");
+    r=l.getElementsByTagName(r)[0];
     y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
     y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
     y.extend=function(i,j){y("extend",i,j)};
@@ -197,4 +202,5 @@ If you have any questions, or want to make changes outside of what is selected b
     /* Add configuration calls below this comment */
     olark.identify('8784-450-10-5723');</script>
     <!-- end olark code -->
+</span>
 </body>
